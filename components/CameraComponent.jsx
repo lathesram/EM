@@ -10,8 +10,8 @@ const CameraComponent = ({ onPhotoTaken }) => {
   useEffect(() => {
     (async () => {
       const permission = await Camera.requestCameraPermissionsAsync();
-      setHasPermission(permission.granted);
-      console.log(permission.granted);
+      // setHasPermission(permission.granted);
+      // console.log(permission.granted);
     })();
   }, []);
 
